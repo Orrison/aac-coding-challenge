@@ -1,9 +1,9 @@
-button.male {
+button#maleBtn {
     background: #4C4CFF;
     color: #fff;
 }
 
-button.female {
+button#femaleBtn {
     background: #FFC0CB;
     color: #fff;
 }
