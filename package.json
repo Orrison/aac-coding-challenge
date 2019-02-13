@@ -1,0 +1,17 @@
+{
+  "name": "aac-coding-challenge",
+  "version": "1.0.0",
+  "description": "UI Engineer Coding Challenge for AAC Interview",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "keywords": [
+    "aac",
+    "coding",
+    "challenge"
+  ],
+  "author": "Kevin Ullyott",
+  "license": "ISC",
+  "dependencies": {}
+}
