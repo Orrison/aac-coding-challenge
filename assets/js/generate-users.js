@@ -1,5 +1,6 @@
 const requestUsers = (gender) => {
   const ajax = new XMLHttpRequest();
+  const url = `https://randomuser.me/api/?results=9&gender=${gender}&inc=name,email,picture`;
 
   ajax.onload = () => {
     if (ajax.status === 200) {
@@ -10,7 +11,7 @@ const requestUsers = (gender) => {
   };
 
 
-  ajax.open('GET', 'https://randomuser.me/api/');
+  ajax.open('GET', url);
   ajax.send();
 };
 
