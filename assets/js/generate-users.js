@@ -15,7 +15,7 @@ const requestUsers = (gender) => {
   ajax.send();
 };
 
-const generateUsers = (event) => {
+const passUserGender = (event) => {
   if (event.target.id === 'maleBtn') {
     requestUsers('male');
   } else if (event.target.id === 'femaleBtn') {
@@ -27,5 +27,5 @@ const generateUsers = (event) => {
 const buttons = document.getElementsByClassName('button');
 
 for (let i = 0; i < buttons.length; i += 1) {
-  buttons[i].addEventListener('click', generateUsers);
+  buttons[i].addEventListener('click', passUserGender);
 }
