@@ -7,3 +7,5 @@ const chunkArray = (arr, chunkSize) => { // eslint-disable-line
 
   return results;
 };
+
+const capFirstLetter = string => string.charAt(0).toUpperCase() + string.slice(1); // eslint-disable-line
