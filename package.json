@@ -2,9 +2,10 @@
   "name": "aac-coding-challenge",
   "version": "1.0.0",
   "description": "UI Engineer Coding Challenge for AAC Interview",
-  "main": "Main.js",
+  "main": "main.js",
   "scripts": {
-    "start": "node Main.js"
+    "init": "npm install && node main.js",
+    "start": "node main.js"
   },
   "keywords": [
     "aac",
