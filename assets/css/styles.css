@@ -1,4 +1,3 @@
-button#maleBtn {
 .container {
     padding-top: 20px;
 }
@@ -12,7 +11,15 @@ button#male {
     color: #fff;
 }
 
-button#femaleBtn {
+button#female {
     background: #FFC0CB;
     color: #fff;
+}
+
+#users {
+    text-align: center;
+}
+
+.card .subtitle {
+    word-wrap: anywhere;
 }
