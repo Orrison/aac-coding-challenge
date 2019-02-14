@@ -1,4 +1,13 @@
 button#maleBtn {
+.container {
+    padding-top: 20px;
+}
+
+.column {
+    padding: .75rem 2rem .75rem 2rem;
+}
+
+button#male {
     background: #4C4CFF;
     color: #fff;
 }
