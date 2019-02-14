@@ -1,13 +1,3 @@
-const chunkArray = (arr, chunkSize) => {
-  const results = [];
-
-  while (arr.length) {
-    results.push(arr.splice(0, chunkSize));
-  }
-
-  return results;
-};
-
 const requestUsers = (gender) => {
   const ajax = new XMLHttpRequest(); // eslint-disable-line no-undef
   const url = `https://randomuser.me/api/?results=9&gender=${gender}&inc=name,email,picture`;
