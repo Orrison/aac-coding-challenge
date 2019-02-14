@@ -5,7 +5,6 @@ const {
 } = require('gulp');
 
 const concat = require('gulp-concat');
-const sourcemaps = require('gulp-sourcemaps');
 const rename = require('gulp-rename');
 const uglify = require('gulp-uglify-es').default;
 
@@ -19,10 +18,8 @@ const concatJS = () => src([
   .pipe(dest(JS_PATH));
 
 const minifyJS = () => src(`${JS_PATH}/all.js`)
-  .pipe(sourcemaps.init())
   .pipe(uglify())
   .pipe(rename('all.min.js'))
-  .pipe(sourcemaps.write('src-maps'))
   .pipe(dest(JS_PATH));
 
 exports.minify = series(concatJS, minifyJS);
