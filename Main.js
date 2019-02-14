@@ -17,7 +17,7 @@ const server = http.createServer((req, res) => {
   } else if (req.url.indexOf('.js') !== -1) {
     const { url } = req;
     const fileName = url.split('/').pop().split('.')[0];
-    fs.readFile(`${__dirname}/assets/js/${fileName}.js`, (err, data) => {
+    fs.readFile(`${__dirname}/assets/js/${fileName}.min.js`, (err, data) => {
       if (err) console.log(err);
       res.writeHead(200, { 'Content-Type': 'text/javascript' });
       res.write(data);
