@@ -6,13 +6,17 @@
     padding: .75rem 2rem .75rem 2rem;
 }
 
+button {
+    width: 130px;
+}
+
 button#male {
-    background: #4C4CFF;
+    background: #00b89c;
     color: #fff;
 }
 
 button#female {
-    background: #FFC0CB;
+    background: #118fe4;
     color: #fff;
 }
 
